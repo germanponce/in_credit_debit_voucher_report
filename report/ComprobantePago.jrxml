@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ComprobantePago" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.3310000000000037"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="OPENERP_RELATIONS" value="[&apos;line_cr_ids&apos;]"/>
+	<queryString language="xPath">
+		<![CDATA[]]>
+	</queryString>
+	<field name="Nombre_de_la_compania-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Nombre_de_la_compania-name]]></fieldDescription>
+	</field>
+	<field name="Logo-logo" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Logo-logo]]></fieldDescription>
+	</field>
+	<field name="Telefono-phone" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Telefono-phone]]></fieldDescription>
+	</field>
+	<field name="Fax-fax" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Fax-fax]]></fieldDescription>
+	</field>
+	<field name="Nombre-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Cliente-partner_id/Nombre-name]]></fieldDescription>
+	</field>
+	<field name="Codigo-code" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Cliente-partner_id/Cuenta_a_cobrar-property_account_receivable/Codigo-code]]></fieldDescription>
+	</field>
+	<field name="Nombre-name2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Cliente-partner_id/Cuenta_a_cobrar-property_account_receivable/Nombre-name]]></fieldDescription>
+	</field>
+	<field name="Total-amount" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Total-amount]]></fieldDescription>
+	</field>
+	<field name="Importe-amount" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Haber-line_cr_ids/Importe-amount]]></fieldDescription>
+	</field>
+	<field name="Full_Reconcile-reconcile" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[/data/record/Haber-line_cr_ids/Full_Reconcile-reconcile]]></fieldDescription>
+	</field>
+	<field name="Descripcion-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Haber-line_cr_ids/Descripcion-name]]></fieldDescription>
+	</field>
+	<field name="Fecha_vencimiento-date_due" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Haber-line_cr_ids/Fecha_vencimiento-date_due]]></fieldDescription>
+	</field>
+	<field name="Saldo_Anterior-month_ant" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Saldo_Anterior-month_ant]]></fieldDescription>
+	</field>
+	<field name="Cargo_al_Cliente-customer_fee" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Cargo_al_Cliente-customer_fee]]></fieldDescription>
+	</field>
+	<field name="Numero_de_cuenta-acc_number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Cuentas_bancarias-bank_ids/Numero_de_cuenta-acc_number]]></fieldDescription>
+	</field>
+	<field name="Descuento_por_Liquidacion-liquidation_payment" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Descuento_por_Liquidacion-liquidation_payment]]></fieldDescription>
+	</field>
+	<field name="Abrir_balance-amount_unreconciled" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Haber-line_cr_ids/Abrir_balance-amount_unreconciled]]></fieldDescription>
+	</field>
+	<field name="Numero-number" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Numero-number]]></fieldDescription>
+	</field>
+	<field name="Saldo_pendiente-residual" class="java.lang.Float">
+		<fieldDescription><![CDATA[/data/record/Lineas_de_comprobante-line_ids/Apunte_contable-move_line_id/Factura-invoice/Saldo_pendiente-residual]]></fieldDescription>
+	</field>
+	<field name="Estado-state" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Estado-state]]></fieldDescription>
+	</field>
+	<field name="Email-email" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Email-email]]></fieldDescription>
+	</field>
+	<field name="Telefono-phone2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Telefono-phone]]></fieldDescription>
+	</field>
+	<field name="Sitio_web-website" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/Sitio_web-website]]></fieldDescription>
+	</field>
+	<field name="ID_de_impuesto-vat" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Compania-company_id/ID_de_impuesto-vat]]></fieldDescription>
+	</field>
+	<field name="Fecha-date" class="java.util.Date">
+		<fieldDescription><![CDATA[/data/record/Fecha-date]]></fieldDescription>
+	</field>
+	<field name="Ref.-reference" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Ref.-reference]]></fieldDescription>
+	</field>
+	<field name="Nombre-name3" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Nombre-name]]></fieldDescription>
+	</field>
+	<field name="Movil-mobile" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Movil-mobile]]></fieldDescription>
+	</field>
+	<field name="Telefono-phone3" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Telefono-phone]]></fieldDescription>
+	</field>
+	<field name="Calle-street" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Calle-street]]></fieldDescription>
+	</field>
+	<field name="Calle2-street2" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Calle2-street2]]></fieldDescription>
+	</field>
+	<field name="Nombre_provincia-name" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Empresa-partner_id/Provincia-state_id/Nombre_provincia-name]]></fieldDescription>
+	</field>
+	<field name="Referencia-ref" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Lineas_de_comprobante-line_ids/Apunte_contable-move_line_id/Factura-invoice/Number-number]]></fieldDescription>
+	</field>
+	<field name="Saldo-residual" class="java.lang.Double">
+		<fieldDescription><![CDATA[/data/record/Lineas_de_comprobante-line_ids/Apunte_contable-move_line_id/Factura-invoice/Saldo-residual]]></fieldDescription>
+	</field>
+	<field name="Tipo_por_defecto-type" class="java.lang.String">
+		<fieldDescription><![CDATA[/data/record/Tipo_por_defecto-type]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="198" y="0" width="328" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Nombre_de_la_compania-name}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="38" y="0" width="100" height="59"/>
+				<imageExpression class="java.lang.String"><![CDATA[$F{Logo-logo}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="526" y="20" width="43" height="20"/>
+				<textElement/>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="154" y="20" width="192" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Telefono: "+$F{Telefono-phone}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="346" y="20" width="170" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA["Fax: "+$F{Fax-fax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="569" y="20" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.util.Date"><![CDATA[$F{Fecha-date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="526" y="39" width="143" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[( $F{Tipo_por_defecto-type} == "receipt" ? "Ingreso" : "Egreso" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="96" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="448" y="40" width="304" height="56"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Referencia de Pago: " + $F{Ref.-reference}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="448" height="20"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Folio: " + $F{Numero-number}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="448" height="20"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Nombre: "+$F{Nombre-name3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="39" width="448" height="20"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Direccion: "+$F{Calle-street}+", "+$F{Calle2-street2}+", "+$F{Nombre_provincia-name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="59" width="448" height="20"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Telefono: "+$F{Telefono-phone3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="269" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Monto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Factura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="138" y="0" width="131" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Vencimiento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="369" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Abono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="469" y="0" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo Pendiente]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="138" y="1" width="131" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Fecha_vencimiento-date_due}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="469" y="0" width="0" height="20" forecolor="#F8F8F8">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement/>
+				<textFieldExpression class="java.lang.Boolean"><![CDATA[$F{Full_Reconcile-reconcile}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="369" y="1" width="100" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{Importe-amount}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="269" y="1" width="100" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{Abrir_balance-amount_unreconciled}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="469" y="1" width="100" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="1" width="138" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{Referencia-ref}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00">
+				<reportElement x="469" y="1" width="100" height="20">
+					<printWhenExpression><![CDATA[$F{Full_Reconcile-reconcile} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression class="java.lang.Double"><![CDATA[$F{Saldo-residual}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="33" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="752" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="0" y="2" width="752" height="31"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Telefono: "+$F{Telefono-phone2}+" | "+"Email: "+$F{Email-email}+" | "+"Sitio Web: "+$F{Sitio_web-website}+" | "+"NIT: "+$F{ID_de_impuesto-vat}+"\n"+"Pagina: "+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="65" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="138" height="20"/>
+				<textElement/>
+				<text><![CDATA[Total...............................:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="19" width="74" height="21"/>
+				<textElement verticalAlignment="Bottom"/>
+				<text><![CDATA[Firma]]></text>
+			</staticText>
+			<line>
+				<reportElement x="484" y="39" width="262" height="1"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="138" y="2" width="201" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.Float"><![CDATA[$F{Total-amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

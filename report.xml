@@ -1,0 +1,82 @@
+<openerp>
+<data>
+
+<!-- =============================== CON ESTO CREAMOS UN BOTON TIPO ACTION QUE IMPRIME EL REPORTE DE JASPER DESDE UNA ACTION XML ============================ -->
+    <record id="account_voucher_report_jasper_customer" model="ir.actions.report.xml">
+        <field name="string">Comprobante Ingresos</field>
+        <field name="auto">True</field>
+        <field name="model">account.voucher</field>
+        <field name="jasper_model_id" ref="account_voucher.model_account_voucher" />
+        <field name="name">Comprobante Ingresos</field>
+        <field name="report_name">Comprobante.Ingresos</field>
+        <field name="rml">in_credit_debit_voucher_report/report/ComprobantePago.jrxml</field>
+        <field name="report_rml">in_credit_debit_voucher_report/report/ComprobantePago.jrxml</field>
+        <field name="menu">True</field>
+        <field name="header">False</field>
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+    <record id="voucher_report_jasper_customer_values" model="ir.values">
+            <field name="name">Comprobante Ingresos</field>
+            <field name="model">account.voucher</field>
+            <field name="key2" eval="'client_print_multi'" />
+            <field name="value_unpickle" eval="'ir.actions.report.xml, ' +str(account_voucher_report_jasper_customer)" />
+        </record>
+
+        <record id="account_voucher_report_jasper_sup" model="ir.actions.report.xml">
+            <field name="string">Comprobante Egresos</field>
+            <field name="auto">True</field>
+            <field name="model">account.voucher</field>
+            <field name="jasper_model_id" ref="account_voucher.model_account_voucher" />
+            <field name="name">Comprobante Egresos</field>
+            <field name="report_name">Comprobante.Egresos</field>
+            <field name="rml">in_credit_debit_voucher_report/report/ComprobantePago2.jrxml</field>
+            <field name="report_rml">in_credit_debit_voucher_report/report/ComprobantePago2.jrxml</field>
+            <field name="menu">True</field>
+            <field name="header">False</field>
+            <field name="jasper_report">True</field>
+            <field name="jasper_output">pdf</field>
+        </record>
+        
+        <record id="voucher_report_jasper_sup_values" model="ir.values">
+                <field name="name">Comprobante Egresos</field>
+                <field name="model">account.voucher</field>
+                <field name="key2" eval="'client_print_multi'" />
+                <field name="value_unpickle" eval="'ir.actions.report.xml, ' +str(account_voucher_report_jasper_sup)" />
+            </record>
+
+
+        <record model="ir.ui.view" id="inherit_voucher_jasper_in">
+            <field name="name">inherit.account.voucher.form.view</field>
+            <field name="model">account.voucher</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <field name="state" position="before">
+                    <button name="print_jasper_voucher" string="Imprimir Comprobante" class="oe_highlight" type="object"/>
+
+                </field>
+            </data>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="inherit_voucher_jasper_in_sup">
+            <field name="name">inherit.account.voucher.form.view</field>
+            <field name="model">account.voucher</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_payment_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <field name="state" position="before">
+                    <button name="print_jasper_voucher" string="Imprimir Comprobante" class="oe_highlight" type="object"/>
+
+                </field>
+            </data>
+            </field>
+        </record>
+
+
+</data>
+</openerp>
